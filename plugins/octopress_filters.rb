@@ -47,7 +47,6 @@ module OctopressLiquidFilters
   def excerpt(input)
     if input.index(/<!--\s*more\s*-->/i)
       split_on_match = input.split(/<!--\s*more\s*-->/i)
-      # return split_on_match.length
       if split_on_match.length == 2
         split_on_match[0]
       else
