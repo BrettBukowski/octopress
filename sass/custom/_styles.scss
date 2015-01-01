@@ -1,3 +1,6 @@
+@import "fontello";
+@import "bigfoot";
+
 // This File is imported last, and will override other styles in the cascade
 // Add styles here to make changes without digging in too much
 #about {
@@ -8,24 +11,16 @@
   #social-links {
     margin: 2em 0;
     a {
-      background: url(/images/sites.png) no-repeat;
-      display: inline-block;
-      float: left;
-      height: 32px;
-      margin-right: 4px;
-      color: transparent;
-      width: 32px;
-      &#github {
-        background-position: 0 -32px;
-      }
-      &#twitter {
-        background-position: 0 -64px;
-      }
-      &#flickr {
-        background-position: 0 -128px;
-      }
-      &#rss {
-        background-position: 0 -96px;
+      margin-right: .5em;
+      text-decoration: none;
+      font-size: larger;
+      .label {
+        position:absolute;
+        left:-10000px;
+        top:auto;
+        width:1px;
+        height:1px;
+        overflow:hidden;
       }
     }
   }
